@@ -1,0 +1,10 @@
+<h1><%= @parks.count %> Parks</h1>
+
+<% @parks.each do |park| %>
+  <section class="park">
+    <p class="fullName"> <%= park.name %></p>
+    <p class="description"> <%= park.description %></p>
+    <p class="directionsInfo"> <%= park.directions %></p>
+    <p class="operatingHours"> <%= park.hours_of_op %></p>
+  </section>
+<% end %>
