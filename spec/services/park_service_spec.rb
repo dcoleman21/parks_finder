@@ -20,7 +20,7 @@ RSpec.describe ParkService do
         expect(park_data[:directionsInfo]).to be_a(String)
 
         expect(park_data).to have_key(:operatingHours)
-        expect(park_data[:data]).to be_a(Array)
+        expect(park_data[:operatingHours]).to be_a(Array)
       end
     end
   end
