@@ -2,7 +2,7 @@ require 'rails_helper'
 
 feature "user can search for state parks" do
 
-  scenario "user submits valid state name" do
+  scenario "user submits valid state name", :vcr do
     # As a user
     visit root_path
 
